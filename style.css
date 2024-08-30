@@ -14,20 +14,21 @@ body{
 }
 
 .cont{
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     border: 3px solid rgb(116, 113, 113);
     border-radius: 15px;
     background-color: rgb(255, 253, 250);
     /* position: relative; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-
+    justify-content: center;
+    align-items: center;
 }
 
 .grid{
+    width: 350px;
+    height: 300px;
     /* position: absolute;
     top: 10px; */
     display: flex;
@@ -37,13 +38,83 @@ body{
 }
 
 .child{
-    flex-grow: 1;
-    width: 100px;
-    height: 100px;
-    background-color: antiquewhite;
-    border: 2px solid black;
-    /* border-radius: 5px; */
+    width: 110px;
+    height: 110px;
+    background-color: rgb(255, 253, 250);
+    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btns{
+    position: relative;
+    display: flex;
+    top: 50px;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+
+.play{
+    position: absolute;
+    top: 80px;
+    right: 200px;
+    background-color: rgb(121, 255, 26);
+    border: 3px solid rgb(139, 255, 143); 
+    width: 60px;
+    height: 40px;
+    border-radius: 4px;
+    transition: height 0.1s, width 0.1s;
+}
+
+.play:hover{
+    width: 62px;
+    height: 42px;
+    background-color: rgb(255, 68, 68);
+    border: 3px solid rgb(255, 150, 150); 
+}
+
+.select_mode{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    gap: 100px;
+    background-color: rgb(255, 245, 53);
+    width: 60px;
+    height: 40px;
+    border: 3px solid rgb(251, 255, 130); 
+    border-radius: 4px;
+    transition: height 0.1s, width 0.1s;
+}
+
+.select_mode:hover{
+    width: 62px;
+    height: 42px;
+    background-color: rgb(103, 255, 204);
+    border: 3px solid rgb(159, 255, 236); 
+}
+
+.bottom{
+    border-bottom: 2px solid black;
+}
+.top{
+    border-top: 2px solid black;
+}
+.left{
+    border-left: 4px solid black;
+}
+.right{
+    border-right: 4px solid black;
+}
+
+.img{
+    position: absolute;
+    top: 81px;
+    left: 498px;
+    border-radius: 2px;
+}
+img{
+    height: 70px;
+    width: 70px;
 }
