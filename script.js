@@ -44,7 +44,7 @@ function show(){
 }
 
 function close(){
-    // const s = document.querySelector(".option_show");
-    // s.style.display = none;
+            // const s = document.querySelector(".option_show");
+            // s.style.display = none;
     console.log("clicked");
 }
