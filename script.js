@@ -45,6 +45,7 @@ function show(){
     parent_of_s.classList.toggle("opt_cont");
 }
 
+
 function close(){
             // const s = document.querySelector(".option_show");
             // s.style.display = none;
