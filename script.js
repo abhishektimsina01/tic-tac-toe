@@ -41,6 +41,8 @@ function for_user(){
 function show(){
     const s = document.querySelector(".option");
     s.classList.toggle("option_show");
+    const parent_of_s = s.parentElement;
+    parent_of_s.classList.toggle("opt_cont");
 }
 
 function close(){

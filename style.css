@@ -121,6 +121,17 @@ img{
 
 
 /* only for try */
+.opt_cont{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 .option{
     position: absolute;
     display: none;
