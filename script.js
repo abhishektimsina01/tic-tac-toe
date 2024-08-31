@@ -31,29 +31,20 @@ function for_user(){
 }
 
 function play(){
-    const s = document.querySelector(".option");
-    s.classList.toggle("option_show");
-    const parent_of_s = s.parentElement;
-    parent_of_s.classList.toggle("opt_cont");
+    const parent_of_s = document.querySelector(".parent");
+    parent_of_s.classList.add("opt_cont");
+    parent_of_s.classList.remove("parent");
 }
 
 function X(){
-    const s = document.querySelector(".option");
-    s.classList.remove("option_show");
-    const parent_of_s = s.parentElement;
+    const parent_of_s = document.querySelector(".opt_cont");
     parent_of_s.classList.remove("opt_cont");
+    parent_of_s.classList.add("parent");
 }
 
 function O(){
-    const s = document.querySelector(".option");
-    s.classList.remove("option_show");
-    const parent_of_s = s.parentElement;
+    const parent_of_s = document.querySelector(".opt_cont");
     parent_of_s.classList.remove("opt_cont");
-}
-
-function close(){
-            // const s = document.querySelector(".option_show");
-            // s.style.display = none;
-    console.log("clicked");
+    parent_of_s.classList.add("parent");
 }
 

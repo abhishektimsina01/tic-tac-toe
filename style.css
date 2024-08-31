@@ -55,7 +55,6 @@ body{
     justify-content: space-between;
 }
 
-
 .play{
     position: absolute;
     top: 80px;
@@ -98,12 +97,15 @@ body{
 .bottom{
     border-bottom: 2px solid black;
 }
+
 .top{
     border-top: 2px solid black;
 }
+
 .left{
     border-left: 4px solid black;
 }
+
 .right{
     border-right: 4px solid black;
 }
@@ -114,13 +116,17 @@ body{
     left: 498px;
     border-radius: 2px;
 }
+
 img{
     height: 50px;
     width: 5    0px;
 }
 
+.parent{
+    position: absolute; 
+    display: none;
+}
 
-/* only for try */
 .opt_cont{
     width: 100vw;
     height: 100vh;
@@ -131,11 +137,6 @@ img{
     position: absolute;
     top: 0px;
     left: 0px;
-}
-
-.option{
-    position: absolute;
-    display: none;
 }
 
 .option_show{
@@ -153,11 +154,28 @@ img{
     position: absolute;
 }
 
-.opt{
+.option_show h1{
     position: relative;
-    top: 80px;
-
+    top: 30px;
 }
+
+.opt{
+    width: 200px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.opt button{
+    border-radius: 5px;
+}
+
+.opt button:hover{
+    background-color: rgb(255, 255, 255);
+}
+
 
 svg{
     width: 20px;
