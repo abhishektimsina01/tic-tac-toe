@@ -1,7 +1,5 @@
 //in order to check the flag whether the box is filled ot not
 const box = [1,2,3,4,5,6,7,8,9];
-const child1 = document.getElementById('one');
-console.log(child1);
 
 var is_selected = false;
 function for_cpu(human1_choice){ 
@@ -15,32 +13,33 @@ function for_cpu(human1_choice){
     }
 }
 
-// //accessing the boxes
-// child1.addEventListener('click', for_img);
+//accessing the boxes:
+const child1 = document.querySelector('.one');
+child1.addEventListener('click', for_img)
 
-// const child2 = document.querySelector('.two');
-// child2.addEventListener('click', for_img);
+const child2 = document.querySelector('.two');
+child2.addEventListener('click', for_img);
 
-// const child3 = document.querySelector('.three');
-// child3.addEventListener('click', for_img);
+const child3 = document.querySelector('.three');
+child3.addEventListener('click', for_img);
 
-// const child4 = document.querySelector('.four');
-// child4.addEventListener('click', for_img);
+const child4 = document.querySelector('.four');
+child4.addEventListener('click', for_img);  
 
-// const child5 = document.querySelector('.five');
-// child5.addEventListener('click', for_img);
+const child5 = document.querySelector('.five');
+child5.addEventListener('click', for_img);
 
-// const child6 = document.querySelector('.six');
-// child6.addEventListener('click', for_img);
+const child6 = document.querySelector('.six');
+child6.addEventListener('click', for_img);
 
-// const child7 = document.querySelector('.seven');
-// child7.addEventListener('click', for_img);
+const child7 = document.querySelector('.seven');
+child7.addEventListener('click', for_img);
 
-// const child8 = document.querySelector('.eight');
-// child8.addEventListener('click', for_img);
+const child8 = document.querySelector('.eight');
+child8.addEventListener('click', for_img);
 
-// const child9 = document.querySelector('.nine');
-// child9.addEventListener('click', for_img);
+const child9 = document.querySelector('.nine');
+child9.addEventListener('click', for_img);
 
 function clear(){
     is_selected = false;
