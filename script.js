@@ -9,15 +9,7 @@ function play(){
     console.log("Playing bitch");
 }
 
-//popup for option selection
-function ask_for_option(){
-    function ask_for_option(){
-        choice  = prompt("do u want to choose X or O");
-        if(choice == "X"){
-            image = ''
-        }
-    }
-}
+
 
 //for selection
 function popup(){
@@ -45,6 +37,19 @@ function show(){
     parent_of_s.classList.toggle("opt_cont");
 }
 
+function X(){
+    const s = document.querySelector(".option");
+    s.classList.remove("option_show");
+    const parent_of_s = s.parentElement;
+    parent_of_s.classList.remove("opt_cont");
+}
+
+function O(){
+    const s = document.querySelector(".option");
+    s.classList.remove("option_show");
+    const parent_of_s = s.parentElement;
+    parent_of_s.classList.remove("opt_cont");
+}
 
 function close(){
             // const s = document.querySelector(".option_show");
