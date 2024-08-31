@@ -29,8 +29,8 @@ body{
 .grid{
     width: 350px;
     height: 300px;
-    /* position: absolute;
-    top: 10px; */
+    position: relative  ;
+    top: -20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -113,12 +113,23 @@ body{
 .img{
     position: relative;
     top: -89px;
-    left: -220px;
+    left: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+
 }
 
 img{
     height: 50px;
     width: 50px;
+    margin-right: auto;
+}
+
+.img h1{
+    position: relative;
+    right: 50px;
 }
 
 .parent{
