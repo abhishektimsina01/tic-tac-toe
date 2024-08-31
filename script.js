@@ -1,8 +1,16 @@
-const options = ["X" ,"O"];
+const box = [1,2,3,4,5,6,7,8,9];
 
+function for_cpu(){ 
+    console.log("The choice of cou was", cpu_choice);
+}
 
 //accessing the boxes
-const child1 = document.querySelector('.one');
+function one(){
+    const child1 = document.querySelector('.one');
+    let child1_img = document.createElement('img');
+    child1.appendChild(child1_img);
+    child1_img.src = 'X.png'
+}
 const child2 = document.querySelector('.two');
 const child3 = document.querySelector('.three');
 const child4 = document.querySelector('.four');
@@ -21,7 +29,8 @@ function play(){
     const parent_of_s = document.querySelector(".parent");
     parent_of_s.classList.add("opt_cont");
     parent_of_s.classList.remove("parent");
-    clear();
+    // clear();
+    for_cpu();
 }
 
 function X(){
@@ -39,4 +48,3 @@ function O(){
     var choice = "O";
     console.log("you choose O");
 }
-
