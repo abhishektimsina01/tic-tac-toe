@@ -71,7 +71,7 @@ body{
 .play:hover{
     width: 62px;
     height: 42px;
-    background-color: rgb(255, 68, 68);
+    background-color: rgb(211, 0, 0);
     border: 3px solid rgb(255, 150, 150); 
 }
 
@@ -91,8 +91,8 @@ body{
 .select_mode:hover{
     width: 62px;
     height: 42px;
-    background-color: rgb(103, 255, 204);
-    border: 3px solid rgb(159, 255, 236); 
+    background-color: rgb(212, 223, 0);
+    border: 3px solid rgb(216, 247, 102); 
 }
 
 .bottom{
@@ -128,16 +128,16 @@ img{
 
 .option_show{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 300px;
     height: 300px;
     background-color: beige;
     border: 2px solid black;
+    border-radius: 5px;
     top: 45%;
     left: 50%;
     transform: translate(-50% ,-50%);
     position: absolute;
-    display: block;
 }
 
 svg{
