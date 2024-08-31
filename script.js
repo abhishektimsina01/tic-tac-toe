@@ -30,7 +30,7 @@ function for_user(){
 
 }
 
-function show(){
+function play(){
     const s = document.querySelector(".option");
     s.classList.toggle("option_show");
     const parent_of_s = s.parentElement;
