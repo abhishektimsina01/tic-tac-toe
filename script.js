@@ -79,7 +79,10 @@ child9.addEventListener('click', function(){
 
 const rows = [[child1, child2, child3],
               [child4, child5, child6],
-              [child7, child8, child9]];
+              [child7, child8, child9],
+              [child1, child4, child7],
+              [child2, child5, child8],
+              [child3, child6, child9]];
 
 function play(){
     if(!is_O_selected && !is_X_selected){
@@ -152,15 +155,13 @@ function check_for_row(){
                 //checking for count to be 3
                 if(count_X == 3){
                     console.log("Winner is X");
-                    count_X = 0;
-                    count_O = 0;
                 }
                 else if(count_O == 3){
                     console.log("Winner is 0");
-                    count_O = 0;
-                    count_X = 0;
                 }
             }
         }
+        count_O = 0;
+        count_X = 0;
     }
 }
