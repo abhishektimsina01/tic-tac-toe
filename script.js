@@ -161,7 +161,7 @@ async function check_for_row(){
                     // const result1 = document.querySelector(".result");
                     // result1.classList.add("win_or_loose");
                     // result1.classList.remove("result");
-                    await pop_up_res();
+                    await pop_up_res(`http://127.0.0.1:5500/X.png`);
 
                 }
                 else if(count_O == 3){
@@ -169,7 +169,7 @@ async function check_for_row(){
                     // const result1 = document.querySelector(".result");
                     // result1.classList.add("win_or_loose");
                     // result1.classList.remove("result");
-                    await pop_up_res();
+                    await pop_up_res(`http://127.0.0.1:5500/O.png`);
                 }
             }
         }
@@ -184,12 +184,13 @@ function clear_result(){
             result1.classList.add("result");
 }
 
-function pop_up_res(){
+function pop_up_res(x){
     return new Promise((res,rej)=>{
         setTimeout(()=>{
             const result1 = document.querySelector(".result");
             result1.classList.add("win_or_loose");
             result1.classList.remove("result");
+            document.querySelector(".res").src= x;
         },500);
     })
 }
