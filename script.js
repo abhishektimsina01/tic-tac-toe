@@ -1,5 +1,4 @@
 //in order to check the flag whether the box is filled ot not
-const box = [1,2,3,4,5,6,7,8,9];
 
 var is_selected = false;
 var human1_choice;
@@ -122,5 +121,4 @@ function for_img(x){
     x.appendChild(child_img);
     child_img.src = `http://127.0.0.1:5500/${human1_choice}.png`
     console.log(child_img);
-
 }
