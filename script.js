@@ -1,4 +1,4 @@
-//in order to check the flag whether the box is filled ot not
+    //in order to check the flag whether the box is filled ot not
 
 var is_X_selected = false;
 var is_O_selected = false;
@@ -157,7 +157,7 @@ async function check_for_row(){
 
                 //checking for count to be 3
                 if(count_X == 3){
-                    
+
                     await pop_up_res(`http://127.0.0.1:5500/X.png`);
 
                 }
