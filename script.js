@@ -82,7 +82,9 @@ const rows = [[child1, child2, child3],
               [child7, child8, child9],
               [child1, child4, child7],
               [child2, child5, child8],
-              [child3, child6, child9]];
+              [child3, child6, child9],
+              [child1, child5, child9]
+              [child3, child5, child7]];
 
 function play(){
     if(!is_O_selected && !is_X_selected){
@@ -155,6 +157,7 @@ function check_for_row(){
                 //checking for count to be 3
                 if(count_X == 3){
                     console.log("Winner is X");
+                    
                 }
                 else if(count_O == 3){
                     console.log("Winner is 0");
