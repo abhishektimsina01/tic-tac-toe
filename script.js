@@ -184,6 +184,7 @@ function clear_result(){
             result1.classList.add("result");
 }
 
+//for pop_up message when result appears
 function pop_up_res(x){
     return new Promise((res,rej)=>{
         setTimeout(()=>{
