@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>TIC-TAC-TOE</title>
 </head>
 <body>
     <div class="cont">
-        <div class="img">
+        <div class="img logo">
             <img src="img.png" alt="image">
             <!-- <img src="text.jpg" alt="text"> -->
              <h1>Tic-Tac-Toe</h1>
-        </div>
+        </div>  
         <div class="grid">
-            <div class="one child bottom" id="one"></div>
+            <div class="one child bottom"></div>
             <div class="two child bottom left right"></div>
             <div class="three child bottom"></div>
             <div class="four child bottom top"></div>
@@ -27,7 +26,7 @@
 
             <div class="btns">
                 <button class="play" onclick="play()"><strong>PLAY</strong></button>
-                <button class="select_mode"><strong>SELECT</strong></button>
+                <button class="select_mode" onclick="reset()"><strong>RESET</strong></button>
             </div>
         </div>
     </div>
@@ -40,12 +39,13 @@
                 <h1>Choose</h1>
                 <div class="opt">
                         <button type="button" class="X"><img src="X.png" alt="X" onclick="X()"></button>
-                        <button type="button" class="0"><img src="O.png" alt="O" onclick="O()"></button>    
+                        <button type="button" ><img src="O.png" alt="O" onclick="O()" class="O"></button>    
                 </div>     
             </div>
         </div>
         <div class="win_or_loose"></div>
         <div class="select"></div>
     </div> 
+    <script src="script.js"></script>
 </body>
 </html>

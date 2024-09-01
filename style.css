@@ -124,6 +124,11 @@ body{
 img{
     height: 50px;
     width: 50px;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
     margin-right: auto;
 }
 

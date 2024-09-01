@@ -2,44 +2,80 @@
 const box = [1,2,3,4,5,6,7,8,9];
 
 var is_selected = false;
-function for_cpu(human1_choice){ 
-    if(human1_choice == "X"){
-        var cpu_choice = "O";
-        console.log(`you choose ${cpu_choice}.jpg`);
-    }
-    else{
-        var cpu_choice = "X";
-        console.log(`you choose ${cpu_choice}.jpg`);
-    }
-}
+var human1_choice;
 
 //accessing the boxes:
-const child1 = document.querySelector('.one');
-child1.addEventListener('click', for_img)
+//1
+const child1 = document.querySelector(".one");
+child1.addEventListener('click', function(){
+    if(is_selected){
+        for_img(child1);
+    }
+});
 
+//2
 const child2 = document.querySelector('.two');
-child2.addEventListener('click', for_img);
+child2.addEventListener('click', function(){
+    if(is_selected){
+        for_img(child2);
+    }
+});
 
+//3
 const child3 = document.querySelector('.three');
-child3.addEventListener('click', for_img);
+child3.addEventListener('click', function(){
+    if(is_selected){
+        for_img(child3);
+    }
+});
 
+// 4
 const child4 = document.querySelector('.four');
-child4.addEventListener('click', for_img);  
+child4.addEventListener('click', function(){
+    if(is_selected){
+        for_img(child4);
+    }
+});  
 
+// 5
 const child5 = document.querySelector('.five');
-child5.addEventListener('click', for_img);
+child5.addEventListener('click', function(){
+    if(is_selected){
+        for_img(child5);
+    }
+});
 
+// 6
 const child6 = document.querySelector('.six');
-child6.addEventListener('click', for_img);
+child6.addEventListener('click', function(){
+    if(is_selected){
+        for_img(child6);
+    }
+});
 
+// 7
 const child7 = document.querySelector('.seven');
-child7.addEventListener('click', for_img);
+child7.addEventListener('click', function(){
+    if(is_selected){
+        for_img(child7);
+    }
+});
 
+// 8
 const child8 = document.querySelector('.eight');
-child8.addEventListener('click', for_img);
+child8.addEventListener('click', function(){
+    if(is_selected){
+        for_img(child8);
+    }
+});
 
+// 9
 const child9 = document.querySelector('.nine');
-child9.addEventListener('click', for_img);
+child9.addEventListener('click', function(){
+    if(is_selected){
+        for_img(child9);
+    }
+});
 
 function clear(){
     is_selected = false;
@@ -50,34 +86,46 @@ function play(){
     const parent_of_s = document.querySelector(".parent");
     parent_of_s.classList.add("opt_cont");
     parent_of_s.classList.remove("parent");
-    clear();
     console.log(is_selected);   
+}
+
+function reset(){
+    is_selected = false;
+    var child_img = document.createElement('img');
+    const boxes = document.querySelectorAll(".child");
+    console.log(boxes);
+    boxes.forEach((val)=>{
+        // var remove_img = val.children;
+        // if(remove_img[0] == child_img){
+        //    console.log("Same for", val);
+        // //    val.removeChild(`${remove_img[0]}`);
+        // }
+        // else{
+        //     console.log("no");
+        // }
+    })
 }
 
 function X(){
     const parent_of_s = document.querySelector(".opt_cont");
     parent_of_s.classList.remove("opt_cont");
     parent_of_s.classList.add("parent");
-    var human1_choice = "X";
-    var is_selected = true;
-    console.log(is_selected);
-    console.log(`you choose ${human1_choice}.jpg`);
-    for_cpu();
+    human1_choice = "X";
+    is_selected = true;
 }
 
 function O(){
     const parent_of_s = document.querySelector(".opt_cont");
     parent_of_s.classList.remove("opt_cont");
     parent_of_s.classList.add("parent");
-    var human1_choice = "O";
-    var is_selected = true;
-    for_cpu(human1_choice);
-    console.log(`you choose ${human1_choice}.jpg`);
+    human1_choice = "O";
+    is_selected = true;
 }
 
-function for_img(){
-    // var child_img = document.createElement('img');
-    // x.appendChild(child_img);
-    // y.src = `${human1_choice}.jpg`
-    console.log("clicked");  
+function for_img(x){
+    var child_img = document.createElement('img');
+    x.appendChild(child_img);
+    child_img.src = `http://127.0.0.1:5500/${human1_choice}.png`
+    console.log(child_img);
+
 }
