@@ -196,6 +196,10 @@ svg{
     height: 20px;
 }
 
+.result{
+    display: none;
+}
+
 .win_or_loose{
     display: flex;
     justify-self: center;

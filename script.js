@@ -83,7 +83,7 @@ const rows = [[child1, child2, child3],
               [child1, child4, child7],
               [child2, child5, child8],
               [child3, child6, child9],
-              [child1, child5, child9]
+              [child1, child5, child9],
               [child3, child5, child7]];
 
 function play(){
@@ -103,6 +103,7 @@ function reset(){
             val.removeChild(val.firstElementChild);
         }
     })
+    clear_result();
 }
 
 function X(){
@@ -141,7 +142,7 @@ function for_img(x){
     check_for_row();
 }
 
-function check_for_row(){
+async function check_for_row(){
     var count_X = 0;
     var count_O = 0;
     for(var key1 of rows){
@@ -156,15 +157,39 @@ function check_for_row(){
 
                 //checking for count to be 3
                 if(count_X == 3){
-                    console.log("Winner is X");
-                    
+                    // console.log("Winner is X");
+                    // const result1 = document.querySelector(".result");
+                    // result1.classList.add("win_or_loose");
+                    // result1.classList.remove("result");
+                    await pop_up_res();
+
                 }
                 else if(count_O == 3){
-                    console.log("Winner is 0");
+                    // console.log("Winner is 0");
+                    // const result1 = document.querySelector(".result");
+                    // result1.classList.add("win_or_loose");
+                    // result1.classList.remove("result");
+                    await pop_up_res();
                 }
             }
         }
         count_O = 0;
         count_X = 0;
     }
+}
+
+function clear_result(){
+            const result1 = document.querySelector(".win_or_loose");
+            result1.classList.remove("win_or_loose");
+            result1.classList.add("result");
+}
+
+function pop_up_res(){
+    return new Promise((res,rej)=>{
+        setTimeout(()=>{
+            const result1 = document.querySelector(".result");
+            result1.classList.add("win_or_loose");
+            result1.classList.remove("result");
+        },500);
+    })
 }
