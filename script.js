@@ -157,18 +157,11 @@ async function check_for_row(){
 
                 //checking for count to be 3
                 if(count_X == 3){
-                    // console.log("Winner is X");
-                    // const result1 = document.querySelector(".result");
-                    // result1.classList.add("win_or_loose");
-                    // result1.classList.remove("result");
+                    
                     await pop_up_res(`http://127.0.0.1:5500/X.png`);
 
                 }
                 else if(count_O == 3){
-                    // console.log("Winner is 0");
-                    // const result1 = document.querySelector(".result");
-                    // result1.classList.add("win_or_loose");
-                    // result1.classList.remove("result");
                     await pop_up_res(`http://127.0.0.1:5500/O.png`);
                 }
             }
