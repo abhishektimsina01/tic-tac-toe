@@ -83,26 +83,21 @@ function clear(){
 }
 
 function play(){
+    if(!is_selected){
     const parent_of_s = document.querySelector(".parent");
     parent_of_s.classList.add("opt_cont");
     parent_of_s.classList.remove("parent");
-    console.log(is_selected);   
+    }
 }
 
 function reset(){
     is_selected = false;
     var child_img = document.createElement('img');
     const boxes = document.querySelectorAll(".child");
-    console.log(boxes);
     boxes.forEach((val)=>{
-        // var remove_img = val.children;
-        // if(remove_img[0] == child_img){
-        //    console.log("Same for", val);
-        // //    val.removeChild(`${remove_img[0]}`);
-        // }
-        // else{
-        //     console.log("no");
-        // }
+        if(`${val.firstElementChild}` == `${child_img}`){
+            val.removeChild(val.firstElementChild);
+        }
     })
 }
 
